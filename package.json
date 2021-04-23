@@ -1,0 +1,31 @@
+{
+  "name": "flag",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Flag",
+  "license": "ISC",
+  "dependencies": {
+    "discord-emotes": "^1.5.4",
+    "discord-tictactoe": "^2.1.0",
+    "discord.js": "^12.5.1",
+    "discord.js-pagination": "^1.0.3",
+    "dotenv": "^8.2.0",
+    "eyes": "^0.1.8",
+    "figlet": "^1.5.0",
+    "fs": "0.0.1-security",
+    "hanime": "^1.1.2",
+    "images-scraper": "^6.0.0",
+    "long-calc": "^1.0.1",
+    "mangadex-full-api": "^4.4.0",
+    "mathjs": "^9.3.2",
+    "mongoose": "^5.11.18",
+    "ms": "^2.1.3",
+    "os": "^0.1.1",
+    "reconlx": "^1.2.41",
+    "weather.js": "^0.1.0"
+  }
+}

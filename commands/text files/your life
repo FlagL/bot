@@ -1,0 +1,94 @@
+
+if(command.permissions.length){
+        let invalidPerms = []
+        for(const perm of command.permissions){
+            if(!validPermissions.includes(perm)){
+                return console.log(`Invalid Permissions ${perm}`);
+            }
+            if(!message.member.hasPermission(perm)){
+                invalidPerms.push(perm);
+                break;
+            }
+        }
+        if(invalidPerms.length){
+            return message.channel.send(`Missing Permissions: \` ${invalidPerms}\``);
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const commandFiles = fs.readdirSync('./commands/').filter(file => file.endsWith('.js'));
+for(const file of commandFiles){
+    const command = require(`./commands/${file}`);
+ 
+    client.commands.set(command.name, command);
+}
+ 
+
+
+
+
+
+client.once('ready', () => {
+    console.log('Flag is online!');
+});
+ 
+client.on('message', message =>{
+    if(!message.content.startsWith(prefix) || message.author.bot) return;
+ 
+    const args = message.content.slice(prefix.length).split(/ +/);
+    const command = args.shift().toLowerCase();
+ 
+    if(command === 'ping'){
+        client.commands.get('ping').execute(message, args);
+    } else if (command == 'emote'){
+        client.commands.get('emote').execute(message, args);
+    } else if (command == 'onlyfans'){
+        client.commands.get('onlyfans').execute(message, args);
+    } else if (command == 'weary'){
+        client.commands.get('weary').execute(message, args);
+    } else if (command == 'court'){
+        client.commands.get('court').execute(message, args);
+    } else if (command == 'clear'){
+        client.commands.get('clear').execute(message, args);
+    } else if (command == 'kick'){
+        client.commands.get('kick').execute(message, args);
+    } else if (command == 'ban'){
+        client.commands.get('ban').execute(message, args);
+    } else if(command == 'mute'){
+        client.commands.get('mute').execute(message, args);
+    } else if(command == 'sofa'){
+        client.commands.get('sofa').execute(message, args);
+    } else if(command == 'whore'){
+        client.commands.get('whore').execute(message, args);
+    } else if(command == 'image'){
+        client.commands.get('image').execute(message, args);
+    } else if(command == 'alpha'){
+        client.commands.get('alpha').execute(message, args);
+    } else if(command == 'howhorny'){
+        client.commands.get('howhorny').execute(message, args, Discord);
+    } else if(command == 'zaz'){
+        client.commands.get('zaz').execute(message, args, Discord);
+    } else if(command == 'balance'){
+        client.commands.get('balance').execute(message, args);
+    }  else if(command == 'suggestion'){
+        client.commands.get('suggestion').execute(message, args, Discord);
+    } 
+
+
+if (message.member.roles.cache.some(r => r.name === "purge perm")){
