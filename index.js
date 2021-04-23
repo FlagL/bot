@@ -6,7 +6,7 @@ const token = process.env.BOT_TOKEN
 client.commands = new Discord.Collection()
 client.aliases = new Discord.Collection()
 
-require(`./database/Connect`)
+require(`./database/connect`)
 
 new Array("command", "event").forEach(handler => {
   require(`./handlers/${handler}`)(client, Discord)
