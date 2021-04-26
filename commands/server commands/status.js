@@ -19,9 +19,9 @@ module.exports = {
       .setThumbnail(client.user.displayAvatarURL())
       .addField("<:settings:822575836304506880> • __Using__", `\`Discord.js: v12.5.1\``)
       .addField("<:ram:822556197667733524> • __RAM__", `\`${Math.floor(process.memoryUsage().heapUsed / 1024 / 1024)}MB\``)
-      .addField("<:cpu:822874979003006986> • __CPU__", `\`${Math.floor(usage[0])}%\``)
-      .addField("<:uptime:822576817436622868> • __Uptime__", `${days} Days, ${hours} Hours, ${minutes} Minutes, ${seconds} Seconds`)
-      .setFooter('© 2021 Phoenixx, all rights reserved.')
+      .addField("<:cpu:834911643325562990> • __CPU__", `\`${Math.floor(usage[0])}%\``)
+      .addField(":arrow_double_up: • __Uptime__", `${days} Days, ${hours} Hours, ${minutes} Minutes, ${seconds} Seconds`)
+      .setFooter('<a:rickroll:836350708105609268>')
     message.channel.send(statEmbed);
   }
 };
