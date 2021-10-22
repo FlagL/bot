@@ -8,7 +8,7 @@ module.exports = {
         .setDescription("Settings")
         .addFields([
             {name: "Prefix", value: "To change the bot's prefix you can run the setprefix command. `,setprefix`/ `,sp`/ `,prefix`"},
-            {name: "Official Discord Server", value: "Click here for the server!", url: "https://discord.gg/mykEgTVqMB"}
+            {name: "Official Discord Server", value: "https://discord.gg/mykEgTVqMB", url: "https://discord.gg/mykEgTVqMB"}
         ])
 
         message.channel.send(page2)
