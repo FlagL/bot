@@ -10,5 +10,7 @@ module.exports = {
             {name: "Prefix", value: "To change the bot's prefix you can run the setprefix command. `,setprefix`/ `,sp`/ `,prefix`"},
             {name: "Official Discord Server", value: "Click here for the server!", url: "https://discord.gg/mykEgTVqMB"}
         ])
+
+        message.channel.send(page2)
     }
 }
